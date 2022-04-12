@@ -1,0 +1,34 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.log-in-box {
+  width: 500px;
+  height: 240px;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.log-in-box .log-in-txt {
+}
+
+.log-in-box .log-in-button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  background-color: #2f80ed;
+  font-size: 22px;
+  color: #fff;
+}
