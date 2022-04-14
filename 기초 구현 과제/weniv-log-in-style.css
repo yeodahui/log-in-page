@@ -30,7 +30,7 @@ body {
 
 .log-in {
   margin: 30px 25px;
-  padding: 20px 16px;
+  padding: 19px 16px 18px 16px;
   width: 350px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
@@ -45,13 +45,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  margin-bottom: 17px;
-  padding: 12px;
-  height: 40px;
+  margin-bottom: 16px;
+  padding: 10px 12px 12px 12px;
   border-radius: 4px;
   background-color: #711bff;
   color: white;
   text-decoration: none;
+}
+
+.log-in .log-in__button img {
+  height: 18px;
 }
 
 .log-in .log-in__more-action {

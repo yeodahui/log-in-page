@@ -4,14 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css" />
     <title>위니브 로그인</title>
   </head>
   <body>
-    <section class="log-in-box">
+    <div class="background-modal" id="bgModal" style="display: none;">
+      <article class="modal-login">
+        <header class="header">
+          <h2>로그인 또는 회원가입</h2>
+          <img class="close-login" id="closeModal" src="img/close.png"></img>
+        </header>
+        <form class="controls-login">
+          <p class="txt-greet">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+          <input type="text" class="input-id" placeholder="아이디" required>
+          <input type="password" class="input-pw" placeholder="비밀번호" required>
+          <p class="cont-check">
+            <input type="checkbox" id="loginHold" class="login-hold">
+            <label for="loginHold">로그인 상태 유지</label>
+          </p>
+          <button type="submit" class="button-login">로그인</button>
+        </form>
+        <div class="more-actions">
+          <a href="" class="sign-up">회원가입</a
+            ><a href="" class="fint-id-pw">아이디/비밀번호 찾기</a>
+        </div>
+        <span class="txt-or">또는</span>
+        <section class="social-login-buttons">
+          <h3 class="hidden">소셜 로그인</h3>
+          <button class="social-login-button google">구글 계정으로 로그인</button>
+          <button class="social-login-button facebook">페이스북 계정으로 로그인</button>
+          <button class="social-login-button naver">네이버 계정으로 로그인</button>
+          <button class="social-login-button kakao">카카오톡 계정으로 로그인</button>
+        </section>
+      </article>
+    </div>
+    <section class="box-login">
       <h1 class="logo"><img src="svg/weniv-logo-blue.svg" alt="" /></h1>
-      <p class="log-in-txt">위니브를 더 즐겁고 편리하게 이용하세요.</p>
-      <a href="" class="log-in-button">로그인</a>
+      <p class="txt-login">위니브를 더 즐겁고 편리하게 이용하세요.</p>
+      <button type="button" class="button-login" id="openModal">로그인</button>
     </section>
+    <script src="modal.js"></script>
   </body>
 </html>

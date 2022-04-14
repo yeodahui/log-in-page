@@ -7,28 +7,26 @@ body {
   background-color: #f2f2f2;
 }
 
-.log-in-box {
+.box-login {
   width: 500px;
   height: 240px;
   padding: 30px;
-  background-color: #fff;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  background-color: #fff;
 }
 
-.log-in-box .log-in-txt {
+.box-login .logo {
+  margin-bottom: 28px;
 }
 
-.log-in-box .log-in-button {
-  display: block;
-  width: 100%;
+.box-login .txt-login {
+  margin-bottom: 32px;
+}
+
+.box-login .button-login {
   height: 60px;
-  padding: 15px;
-  background-color: #2f80ed;
+  padding: 17px 0 15px 0;
   font-size: 22px;
-  color: #fff;
 }
