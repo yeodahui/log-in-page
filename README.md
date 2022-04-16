@@ -18,4 +18,4 @@
 
   preview:
 
-  ![selectbox preview](dropdown_selectbox_preview.gif)
+  ![selectbox preview](dropdown_slectbox_preview.gif)
