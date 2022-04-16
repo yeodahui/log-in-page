@@ -45,6 +45,9 @@
         background-image: url(./svg/icon-Triangle-down.svg);
       }
       .box-select .list-options {
+        display: none;
+        flex-direction: column;
+        width: 200px;
         margin-top: 10px;
         border: 1px solid #c4c4c4;
         border-radius: 10px;
@@ -62,8 +65,10 @@
   </head>
   <body>
     <div class="box-select">
-      <button class="btn-label closed">최애 프로그래밍 언어</button>
-      <ul class="list-options">
+      <button id="selectBtn" class="btn-label closed">
+        최애 프로그래밍 언어
+      </button>
+      <ul id="optionList" class="list-options">
         <li class="option">Python</li>
         <li class="option">Java</li>
         <li class="option">Javascript</li>
@@ -71,6 +76,44 @@
         <li class="option">C/C++</li>
       </ul>
     </div>
-    <script></script>
+    <script>
+      const selectBtn = document.getElementById("selectBtn");
+      const optionList = document.querySelector("#optionList");
+      const options = document.querySelectorAll(".option");
+
+      function open() {
+        // 닫혀있을 때 클릭하면
+        selectBtn.classList.remove("closed");
+        selectBtn.classList.add("opened");
+        optionList.style.display = "flex";
+        options.forEach(option => {
+          option.addEventListener("click", optionClick);
+        });
+      }
+
+      function close() {
+        // 열려있을 때 클릭하면
+        selectBtn.classList.remove("opened");
+        selectBtn.classList.add("closed");
+      }
+
+      function optionClick(event) {
+        const value = event.target.innerText;
+
+        selectBtn.innerText = value;
+        optionList.style.display = "none";
+        close();
+      }
+
+      if (selectBtn) {
+        selectBtn.addEventListener("click", function () {
+          if (selectBtn.classList.contains("opened")) {
+            close();
+          } else {
+            open();
+          }
+        });
+      }
+    </script>
   </body>
 </html>
