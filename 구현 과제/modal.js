@@ -27,18 +27,35 @@ if (loginBtn) {
   console.log("버튼 인식됨");
   loginBtn.addEventListener("click", function (event) {
     const id = document.querySelector("#id");
+    const pw = document.querySelector("#pw");
+    const parent = id.parentElement;
+
     event.preventDefault();
 
     if (id.value) {
-      console.log("아이디 비밀번호 입력 성공 아마도");
+      console.log("아이디 인식되었음");
+
+      id.style.border = "1px solid #C4C4C4;";
+
+      const notice = document.createElement("div");
+
+      notice.classList.add("notice");
+      notice.innerHTML = "아이디 혹은 비밀번호가 일치하지 않습니다.";
+      notice.style.margin = "6px 0 12px 3px;";
+
+      if (pw.nextSibling.innerHTML != notice.innerHTML) {
+        parent.insertBefore(notice, pw.nextSibling);
+      }
     } else {
-      let notice = document.createElement("div");
+      const notice = document.createElement("div");
 
       notice.classList.add("notice");
       notice.innerHTML = "아이디를 입력해 주세요.";
 
-      id.parentElement.insertBefore(notice, id.nextSibling);
-      id.style.border = "2px solid #F4492E";
+      if (id.nextSibling.innerHTML != notice.innerHTML) {
+        parent.insertBefore(notice, id.nextSibling);
+        id.style.border = "2px solid #F4492E";
+      }
     }
   });
 }
