@@ -50,14 +50,23 @@
   margin-bottom: 24px;
 }
 
-.controls-login input[type="text"],
-.controls-login input[type="password"] {
+.controls-login .input-id,
+.controls-login .input-pw {
   padding: 15px 16px;
-  margin-bottom: 10px;
   width: 100%;
   height: 50px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+}
+
+.controls-login .input-pw {
+  margin: 10px 0;
+}
+
+.controls-login .notice {
+  margin: 6px 0 0 3px;
+  font-size: 14px;
+  color: #f4492e;
 }
 
 .controls-login .cont-check {

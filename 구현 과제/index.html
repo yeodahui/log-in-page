@@ -17,13 +17,14 @@
         </header>
         <form class="controls-login">
           <p class="txt-greet">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
-          <input type="text" class="input-id" placeholder="아이디" required>
-          <input type="password" class="input-pw" placeholder="비밀번호" required>
+          <input type="text" id="id" class="input-id" placeholder="아이디">
+          <!-- <div class="notice">아이디를 입력해 주세요.</div> -->
+          <input type="password" id="pw" class="input-pw" placeholder="비밀번호">
           <p class="cont-check">
             <input type="checkbox" id="loginHold" class="login-hold">
             <label for="loginHold">로그인 상태 유지</label>
           </p>
-          <button type="submit" class="button-login">로그인</button>
+          <button id="login" type="submit" class="button-login">로그인</button>
         </form>
         <div class="more-actions">
           <a href="" class="sign-up">회원가입</a
