@@ -106,3 +106,7 @@
   color: #f4492e;
   text-align: left;
 }
+
+.module-inp ~ .module-inp {
+  margin-top: 10px;
+}
