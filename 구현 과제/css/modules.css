@@ -107,6 +107,6 @@
   text-align: left;
 }
 
-.module-inp ~ .module-inp {
+.cont-inp ~ .cont-inp {
   margin-top: 10px;
 }
