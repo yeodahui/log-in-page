@@ -1,0 +1,108 @@
+/* 소셜로그인 버튼 */
+.btn-social-login {
+  display: block;
+  margin-bottom: 10px;
+  padding: 13px 15px;
+  border-radius: 5px;
+  border: 1px solid #767676;
+  text-align: center;
+  color: #767676;
+  line-height: 22px;
+}
+
+.btn-social-login::before {
+  content: " ";
+  background-image: url(../img/img_sprites.png);
+  float: left;
+  width: 22px;
+  height: 22px;
+}
+
+.btn-social-login.google {
+  border: 1px solid #767676;
+}
+
+.btn-social-login.google::before {
+  background-position: left top;
+}
+
+.btn-social-login.facebook {
+  border: 1px solid #2d9cdb;
+}
+
+.btn-social-login.facebook::before {
+  background-position: center top;
+}
+
+.btn-social-login.naver {
+  border: 1px solid #00bf18;
+}
+
+.btn-social-login.naver::before {
+  background-position: right top;
+}
+
+.btn-social-login.kakao {
+  border: 1px solid #f2c94c;
+}
+
+.btn-social-login.kakao::before {
+  background-position: left bottom;
+}
+
+/* 로그인 버튼 */
+.btn-login {
+  width: 100%;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  background-color: #2f80ed;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 22px;
+}
+
+.btn-login__modal {
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* 모달 닫기 버튼 */
+.btn-modal-close {
+  width: 16px;
+  height: 16px;
+  border: 0;
+  background-color: transparent;
+}
+
+/* 로그인 인풋 */
+.txt-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.inp-id,
+.inp-pw {
+  padding: 15px 16px;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+.cont-inp.error .inp-id {
+  border: 2px solid #f4492e;
+}
+
+.txt-inp-error {
+  margin: 6px 0 0 4px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #f4492e;
+  text-align: left;
+}
