@@ -1,28 +1,54 @@
 /* import */
 @import "reset.css";
 @import "button-login.css";
-@import "login.css";
 @import "modal.css";
+@import "modules.css";
 
 /* design */
 * {
   box-sizing: border-box;
 }
 
+.txt-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
 body {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
 }
 
-.fw-500 {
-  font-weight: 500;
+.cont-login {
+  width: 500px;
+  padding: 30px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
 }
 
-.hidden {
-  display: block;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  margin-top: -1px;
+.cont-login .logo {
+  margin-bottom: 28px;
+}
+
+.cont-login .txt-login {
+  margin-bottom: 32px;
+}
+
+.cont-login .button-login {
+  height: 60px;
+  padding: 17px 0 15px 0;
+  font-size: 22px;
 }

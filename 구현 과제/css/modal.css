@@ -1,4 +1,4 @@
-.background-modal {
+.bg-modal {
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -17,73 +17,39 @@
 }
 
 .modal-login .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 58px;
   text-align: center;
   border-bottom: 1px solid #c4c4c4;
-  padding: 22px 24px 18px 24px;
+  padding: 20px 24px 18px;
 }
 
 .modal-login .header h2 {
-  display: inline;
   font-weight: 500;
 }
 
-.modal-login .header .close-login {
-  float: right;
-  width: 16px;
-  height: 16px;
-  font-weight: 500;
+.cont-login-controls {
+  padding: 25px 24px;
 }
 
-.modal-login .controls-login {
-  margin-top: 85px;
-  padding: 0 24px;
-}
-
-.controls-login .txt-greet {
+.form-login .txt-greet {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 24px;
 }
 
-.controls-login .input-id,
-.controls-login .input-pw {
-  padding: 15px 16px;
-  width: 100%;
-  height: 50px;
-  border: 1px solid #c4c4c4;
-  border-radius: 5px;
-}
-
-.controls-login .input-pw {
+.input-pw {
   margin: 10px 0;
 }
 
-.controls-login .notice {
-  margin: 6px 0 0 3px;
-  font-size: 14px;
-  color: #f4492e;
-}
-
-.controls-login .cont-check {
-  margin: 6px 0 20px 0;
-  padding: 1px 2px;
-}
-
-.controls-login input[type="checkbox"] {
+.login-hold {
   display: none;
 }
 
-.controls-login input[type="checkbox"] + label {
+.login-hold + label {
   line-height: 22px;
   color: #767676;
 }
 
-.controls-login input[type="checkbox"] + label::before {
+.login-hold + label::before {
   content: " ";
   float: left;
   margin-right: 8px;
@@ -92,14 +58,8 @@
   background-image: url("../img/icon_check_empty.png");
 }
 
-.controls-login input[type="checkbox"]:checked + label::before {
+.login-hold:checked + label::before {
   background-image: url("../img/icon_check.png");
-}
-
-.controls-login .button-login {
-  height: 50px;
-  padding: 14px;
-  font-size: 18px;
 }
 
 .more-actions {
@@ -129,9 +89,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
   margin: 0 -1em 20px;
-  text-align: center;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -147,61 +105,8 @@
   background-color: #c4c4c4;
 }
 
-.modal-login .social-login-buttons {
-  padding: 0 24px 25px;
-}
-
-.social-login-button {
-  padding: 13px 15px;
-  margin-bottom: 10px;
-  width: 100%;
-  line-height: 22px;
-  border-radius: 5px;
-  font-weight: 500;
-  background-color: #fff;
-  color: #767676;
-}
-
-.social-login-button:last-child {
-  margin-bottom: 0;
-}
-
-.social-login-button::before {
-  content: " ";
-  background-image: url(../img/img_sprites.png);
-  float: left;
-  width: 22px;
-  height: 22px;
-}
-
-.social-login-button.google {
-  border: 1px solid #767676;
-}
-
-.social-login-button.google::before {
-  background-position: left top;
-}
-
-.social-login-button.facebook {
-  border: 1px solid #2d9cdb;
-}
-
-.social-login-button.facebook::before {
-  background-position: center top;
-}
-
-.social-login-button.naver {
-  border: 1px solid #00bf18;
-}
-
-.social-login-button.naver::before {
-  background-position: right top;
-}
-
-.social-login-button.kakao {
-  border: 1px solid #f2c94c;
-}
-
-.social-login-button.kakao::before {
-  background-position: left bottom;
+.btn-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }

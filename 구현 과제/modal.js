@@ -34,32 +34,20 @@ if (loginBtn) {
 
     if (id.value) {
       console.log("아이디 인식되었음");
+      id.nextElementSibling.style.display = "none";
+      parent.classList.remove("error");
 
       // 비밀번호 확인
-      if (true) {
-        const notice = document.createElement("div");
-
-        notice.classList.add("notice");
-        notice.innerHTML = "아이디 혹은 비밀번호가 일치하지 않습니다.";
-
-        // 문구 중복 출력 방지
-        if (pw.nextSibling.innerHTML != notice.innerHTML) {
-          parent.insertBefore(notice, pw.nextSibling);
-        }
-      } else {
+      if (false) {
         console.log("로그인 성공");
+      } else {
+        pw.nextElementSibling.style.display = "block";
       }
     } else {
-      const notice = document.createElement("div");
+      console.log("아이디 없음");
 
-      notice.classList.add("notice");
-      notice.innerHTML = "아이디를 입력해 주세요.";
-
-      // 문구 중복 출력 방지
-      if (id.nextSibling.innerHTML != notice.innerHTML) {
-        parent.insertBefore(notice, id.nextSibling);
-        id.style.border = "2px solid #F4492E";
-      }
+      id.nextElementSibling.style.display = "block";
+      parent.classList.toggle("error");
     }
   });
 }

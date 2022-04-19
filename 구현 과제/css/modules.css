@@ -2,20 +2,25 @@
 .btn-social-login {
   display: block;
   margin-bottom: 10px;
-  padding: 13px 15px;
+  padding: 11px 12px;
   border-radius: 5px;
   border: 1px solid #767676;
   text-align: center;
   color: #767676;
-  line-height: 22px;
+  line-height: 28px;
+}
+
+.btn-social-login:last-child {
+  margin-bottom: 0;
 }
 
 .btn-social-login::before {
   content: " ";
-  background-image: url(../img/img_sprites.png);
+  background-image: url(../img/social_sprites_retina.png);
+  background-size: 152px;
   float: left;
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
 }
 
 .btn-social-login.google {
@@ -23,7 +28,7 @@
 }
 
 .btn-social-login.google::before {
-  background-position: left top;
+  background-position: -5px -5px;
 }
 
 .btn-social-login.facebook {
@@ -31,15 +36,14 @@
 }
 
 .btn-social-login.facebook::before {
-  background-position: center top;
+  background-position: -45px -5px;
 }
 
 .btn-social-login.naver {
   border: 1px solid #00bf18;
 }
-
 .btn-social-login.naver::before {
-  background-position: right top;
+  background-position: -81px -5px;
 }
 
 .btn-social-login.kakao {
@@ -47,7 +51,7 @@
 }
 
 .btn-social-login.kakao::before {
-  background-position: left bottom;
+  background-position: -119px -5px;
 }
 
 /* 로그인 버튼 */
@@ -78,15 +82,6 @@
 }
 
 /* 로그인 인풋 */
-.txt-hide {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-}
-
 .inp-id,
 .inp-pw {
   padding: 15px 16px;
@@ -100,6 +95,7 @@
 }
 
 .txt-inp-error {
+  display: none;
   margin: 6px 0 0 4px;
   font-size: 14px;
   line-height: 18px;
@@ -109,4 +105,8 @@
 
 .cont-inp ~ .cont-inp {
   margin-top: 10px;
+}
+
+.cont-inp + .cont-inp {
+  margin-bottom: 10px;
 }
