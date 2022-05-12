@@ -1,0 +1,83 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 14px;
+}
+.txt-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.txt-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box-select {
+  position: relative;
+}
+.btn-label {
+  padding: 13px 40px 14px 13px;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  text-align: left;
+}
+.btn-label:focus {
+  border: 1px solid #9b51e0;
+  outline: solid 3px #f8e4ff;
+}
+.btn-label {
+  background-size: 10px 10px;
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+}
+.btn-label.opened {
+  background-image: url(./svg/icon-Triangle-up.svg);
+}
+.btn-label.closed {
+  background-image: url(./svg/icon-Triangle-down.svg);
+}
+.list-options {
+  position: absolute;
+  top: 49px;
+  display: none;
+  flex-direction: column;
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+}
+.list-options.opened {
+  display: flex;
+}
+.list-options li {
+  margin-bottom: 5px;
+}
+.list-options li:last-child {
+  margin-bottom: 0;
+}
+.list-options li > button {
+  padding: 7px 10px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.list-options li > button:hover {
+  background-color: #f8e4ff;
+}
