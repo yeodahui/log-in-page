@@ -36,12 +36,9 @@
 
       if (selectBtn) {
         selectBtn.addEventListener("click", () => {
-          if (optionList.classList.contains("opened")) {
-            // 열려있을 때 클릭하면
-            optionList.classList.toggle("opened");
-          } else {
-            // 닫혀있을 때 클릭하면
-            optionList.classList.toggle("opened");
+          optionList.classList.toggle("opened");
+          if (!optionList.classList.contains("opened")
+            // 닫혀있을 때 클릭했다면 각 옵션에 이벤트리스너 추가
             options.forEach(option => {
               option.addEventListener("click", optionClick);
             });
