@@ -40,15 +40,13 @@ body {
   outline: solid 3px #f8e4ff;
 }
 .btn-label {
+  background-image: url(./svg/icon-Triangle-down.svg);
   background-size: 10px 10px;
   background-position: right 15px center;
   background-repeat: no-repeat;
 }
 .btn-label.opened {
   background-image: url(./svg/icon-Triangle-up.svg);
-}
-.btn-label.closed {
-  background-image: url(./svg/icon-Triangle-down.svg);
 }
 .list-options {
   position: absolute;
