@@ -50,7 +50,7 @@ body {
 }
 .list-options {
   position: absolute;
-  top: 49px;
+  top: 54px;
   display: none;
   flex-direction: column;
   padding: 8px;
