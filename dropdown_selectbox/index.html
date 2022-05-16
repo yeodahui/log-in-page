@@ -22,7 +22,7 @@
       </ul>
     </article>
     <script>
-      const selectBtn = document.getElementById("selectBtn");
+      const selectBtn = document.querySelector("#selectBtn");
       const optionList = document.querySelector("#optionList");
       const options = document.querySelectorAll(".option > button");
 
@@ -39,6 +39,7 @@
           optionList.classList.toggle("opened");
           if (!optionList.classList.contains("opened")) {
             // 닫혀있을 때 클릭했다면 각 옵션에 이벤트리스너 추가
+            selectBtn.classList.toggle("opened");
             options.forEach(option => {
               option.addEventListener("click", optionClick);
             });
